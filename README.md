@@ -10,7 +10,7 @@ Año 2020
 -- Análisis e implementación del código de Javascript --
 
 Al realizar el analisis del cómo se puede implementar el código de Javascript en nuestro proyecto,
-encontramos la posibilidad de la implementación de las siguientes variables:
+encontramos la posibilidad de la implementación de las siguientes objetos:
 
 - document.QuertySelectorAll
 - addEventListener
