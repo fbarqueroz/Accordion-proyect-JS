@@ -25,7 +25,7 @@ Info: https://www.w3schools.com/csSref/css3_pr_transition.asp*/
 
 /*Triangle (right)*/
 .accordion_button::after {
-    content: '\25be'; /* --> Representación hexadecimal del triangulo*/
+    content: '\25b4'; /* --> Representación hexadecimal del triangulo ¨25be¨*/
     float: right;
     transform: scale(1.5);
 }
