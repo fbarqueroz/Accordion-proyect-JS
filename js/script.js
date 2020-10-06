@@ -2,9 +2,18 @@
 // Script code (Accordion)
 //
 
-document.querySelectorAll('accorduion_button').forEach (button => {
-    button.addEventListener('click', () => {
-        const accordionContent = button.nextElementSibling; // nextElementSibling => Obtiene el contenido del HTML del siguiente elemento hermano.
-        button.classList.toggle('accordion')
-    })
-})
+let accordion = document.getElementsByClassName("accordion_button");
+let i;
+
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function(event) {
+        let acc = event.currentTarget;
+        acc.classList.add("active");
+        let panel = acc.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+}

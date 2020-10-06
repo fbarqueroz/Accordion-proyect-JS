@@ -8,20 +8,20 @@ body {
 /*Button style*/
 .accordion_button {
     display: block;
-    width: 100%;
     padding: 15px;
-    border-color: #07BEB8;
-    border-radius: 2px;
     outline: none;
     cursor: pointer;
-    /*Cursor: Generate a bunch of different mouse cursor.In this case a select hand
-    Info: https://www.w3schools.com/csSref/pr_class_cursor.asp*/
-    background: #68D8D6;
+    background: #7DF2DF;
     text-align: left;
     transition: background 0.2s;
-/*Transition: Hover over a <div> element to gradually change the width.
-Info: https://www.w3schools.com/csSref/css3_pr_transition.asp*/
+    margin: 0 auto;
 }
+
+/*Change color => pointer*/
+.active, .accordion_button:hover {
+    background-color: #16E0BD; 
+}
+
 
 /*Triangle (right)*/
 .accordion_button::after {
@@ -40,13 +40,11 @@ Info: https://www.w3schools.com/csSref/css3_pr_transition.asp*/
 }
 
 .accordion_button-active::after {
-    content: '\25b4';
+    content: '\25be';
 }
 
 .accordion_content {
-    overflow: hidden; /* --> oculta el contenido - https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
-    max-height: 0;
-    transition: max-height 0.2s; /*Transición para desplegar contenido*/
+    overflow: hidden; /* --> oculta el contenido*/
     padding: 0 15px;
     background: #C4FFF9;
 }
